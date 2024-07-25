@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter, Routes , Route, useNavigate } from 'react-router-dom'
-import { Dashboard } from './components/dashboard'
-import { Landing } from './components/landing'
+
+const Dashboard = React.lazy(() => import('./components/dashboard');
+const Landing = React.lazy(() => import('./components/landing');
 
 function App() { //client side routing 
 
