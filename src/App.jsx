@@ -12,8 +12,8 @@ function App() { //client side routing
      <BrowserRouter>
        <Appbar />
        <Routes>
-         <Route path='/dashboard' element={<Dashboard />} />
-         <Route path='/' element={<Landing />} />
+         <Route path='/dashboard' element={<Suspense fallback={"loading..."}><Dashboard /></Suspense>} />
+         <Route path='/' element={<Suspense fallback={"loading..."}><Landing /></Suspense>} />
        </Routes>
      </BrowserRouter>
    </div> 
