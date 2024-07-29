@@ -21,7 +21,7 @@ function App() { //client side routing
 }
 
 function Appbar() {
-  const useNavigate = useNavigate();
+  const useNavigate = useNavigate(); //when we click on either of the buttons we go to that page 
 
   return <div>
      <div>
